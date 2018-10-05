@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build  && node --optimize_for_size --max_old_space_size=460 server.js",
+    "start": "node --optimize_for_size --max_old_space_size=460 && npm run build  && node server.js",
     "build": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
